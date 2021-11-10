@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
+import NotFound from './components/404';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,9 @@ class App extends React.Component {
           <Route path="/Page1/:name" element={<Page1 />} />
           <Route path="/Page2" element={<Page2 />} />
           <Route path="/Page3" element={<Page3 />} />
+          <Route path='/*' element={<NotFound />} />
+          {/* <Redirect from='*' to='/404' />
+          <Redirect to="/" /> */}
         </Routes>
       </Router>
     )

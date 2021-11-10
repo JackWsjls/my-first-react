@@ -1,4 +1,5 @@
-#### create-react-app初始化后，在React中加路由
+create-react-app初始化后，增加路由，及报错 ‘Switch‘ is not exported from ‘react-router-dom‘. 的处理
+#### create-react-app初始化后，增加路由
 ```
 npm install --save react-router-dom 
 ```
@@ -93,7 +94,7 @@ export default Page1;
 参考链接：
 https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-all-switch-elements-to-routes
 
-注意 react-router-dom v6和v6之前的区别
+注意 react-router-dom v6和v6之前版本的区别
 ```
 // v4 and v5 before 5.1
 function App() {
@@ -122,3 +123,5 @@ function App() {
   );
 }
 ```
+否则报错：'Switch' is not exported from 'react-router-dom'. 
+解决办法：https://github.com/remix-run/react-router/issues/8226
