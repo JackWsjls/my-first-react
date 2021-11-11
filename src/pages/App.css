@@ -1,3 +1,44 @@
+@charset "utf-8";
+html, body {
+  font-size: 62.5%;
+}
+/*reset*/
+body,html{ padding:0; margin:0 auto; background:#fff; word-break:break-word; font-family:"微软雅黑";}
+img{ border:none;}
+h1,h2,h3,h4,h5,h6,hr,blockquote,form,ul,ol,li,p,pre,dl,dt,dd,fieldset,legend,button,input,textarea,th,td,figure{ padding:0; margin:0;}
+ul,ol,li{ list-style:none;}
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+legend{ color:#000;}
+fieldset{ border:0;}
+button,input,select,textarea{ font-size:100%;}
+table{ border-collapse:collapse; border-spacing:0;}
+textarea{ resize:none;}
+select{ height:22px; line-height:18px; padding:2px; border:1px solid #d9d9d9; border-radius:2px;}
+
+/*public font*/
+body,button,input,select,textarea{ font-family:"微软雅黑"; color:#333; font-size:12px;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:500;}
+address,cite,dfn,em,var,s{ font-style:normal;}
+code,kbd,pre,samp{ font-family:courier new, courier, monospace;}
+.fn{ font-weight:500;}.fb{ font-weight:700;}
+small,.ft12{ font-size:12px;}.ft14{ font-size:14px;}.ft16{ font-size:16px;}.ft18{ font-size:18px;}.ft20{ font-size:20px;}.ft22{ font-size:22px;}.ft24{ font-size:24px;}
+a{ color:#000; text-decoration:none;}
+.op8:hover{ filter:alpha(opacity=80); opacity:0.8;}
+.wrapper{ width:1200px; margin:0 auto;}
+.tl{ text-align:left;}.tc{ text-align:center;}.tr{ text-align:right;}
+.fl{ float:left;}.fr{ float:right;}
+.clear{ clear:both; line-height:0px; font-size:0px;}
+.clearfix:after{ content:".";display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{ zoom:1;}
+.hr_20{ clear:both; height:20px; overflow:hidden; font-size:1px; line-height:1px;}
+.vm{ vertical-align:middle;}.vt{ vertical-align:top;}
+.db{ display:block;}.dn,.dsn{ display:none;}.vh{ visibility:hidden;}
+.utra{ -webkit-transition:all 0.2s ease-in-out 0s; transition:all 0.2s ease-in-out 0s;}
+.pta{ position:absolute;}.ptr{ position:relative;}
+.cp{ cursor:pointer;}
+.c1{ color: #ff8d18;}
+
 .App {
   text-align: center;
 }
@@ -35,4 +76,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.triangle {
+    /* width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red; */
+    width: 0;
+    height: 0;
+    border-top: 50px solid black;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
 }

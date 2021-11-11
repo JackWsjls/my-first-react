@@ -12,9 +12,10 @@ class Home extends React.Component {
         <Link to="/Page2">
           <div>点击跳转到Page2</div>
         </Link>
-        <Link to="/Page3">
-          <div>点击跳转到Page3</div>
+        <Link to="/Video">
+          <div>点击跳转到Video</div>
         </Link>
+        <div className="triangle"></div>
       </div>
     );
   }
